@@ -107,3 +107,19 @@ dir/		#表示忽略 dir 目录下的所有文件
 doc/*.txt	#忽略 doc 目录下的所有 txt 文件，但不会忽略 doc 下子目录中的txt文件，如 doc/next/test.txt
 ```
 
+#### 4.4 链接远程仓库
+
++ 创建一个文件夹，名字与远程仓库相同
++ 在该文件夹目录下打开 Git Bash
++ ``git init  //初始化一个本地仓库（初次连接时）``
++ ``git remote add origin (仓库的url)``
++ ``git pull origin "分支名"``
+
+> 要注意远程仓库的分支名与 git bash 中的分支名是否相同
+
+#### 4.5 更新本地仓库和远程仓库
+
++ ``git add .``
++ ``git commit -m "提交信息"``
++ ``git push origin "分支名"``
+
