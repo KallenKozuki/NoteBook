@@ -550,7 +550,7 @@ C++支持三种程序运行结构：顺序结构、选择结构、循环结构
 	//冒泡排序升序
 	int sort[] = { 2,4,0,5,7,1,3,8,9,6 };
 	//排序算法
-	for (int i = 0; i < sizeof(sort)/sizeof(sort[0] - 1); i++) {
+	for (int i = 0; i < sizeof(sort)/sizeof(sort[0]) - 1; i++) {
 		for (int j = 0; j < sizeof(sort) / sizeof(sort[0]) - 1 - i; j++) {
 			if (sort[j] > sort[j + 1]) {//比较改为 < 则是降序
 				int temp = sort[j + 1];
